@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!--  ListView最左邊的縮略圖 -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:src="@drawable/camera" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="24dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/itemnote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemname"
+        android:textColor="#343434"
+        android:textSize="16dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail" />
+
+    <TextView
+        android:id="@+id/itemprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="5dip"
+        android:textSize="27dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/itemnote" />
+
+</RelativeLayout>
