@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dip"
+    android:paddingLeft="1dip"
+    android:paddingRight="5dip"
+    android:paddingTop="5dip"
+    android:background="@drawable/bg"
+    tools:context="com.example.tony.final0608.detail">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消追蹤"
+        android:id="@+id/cancel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最近商店"
+        android:id="@+id/location"
+        android:layout_alignTop="@+id/cancel"
+        android:layout_toEndOf="@+id/cancel" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="即時評論"
+        android:id="@+id/comment"
+        android:layout_alignTop="@+id/location"
+        android:layout_toEndOf="@+id/location" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="網路心得"
+        android:id="@+id/review"
+        android:layout_alignTop="@+id/comment"
+        android:layout_toEndOf="@+id/comment" />
+
+    <ImageView
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/cancel"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/camera" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="商品名稱"
+        android:id="@+id/tv1"
+        android:layout_below="@+id/location"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="最低價格"
+        android:id="@+id/tv2"
+        android:layout_below="@+id/tv1"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tv3"
+        android:layout_below="@+id/tv2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="商品內容" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/send" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="留言"
+        android:id="@+id/send"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
